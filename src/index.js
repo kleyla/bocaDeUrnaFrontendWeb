@@ -14,6 +14,7 @@ import Index from "./views/Index.jsx";
 import Registro from "./views/Registro.jsx";
 import Login from "./views/Login.jsx";
 import Profile from "./views/Profile.jsx";
+import Home from "./views/Home.jsx";
 
 ReactDOM.render(
     <BrowserRouter>
@@ -30,6 +31,10 @@ ReactDOM.render(
         <Route
             path="/profile-page"
             render={props => <Profile {...props} />}
+        />
+        <Route
+            path="/home-page"
+            render={props => <Home {...props} />}
         />
         <Redirect from="/" to="/components" />
       </Switch>

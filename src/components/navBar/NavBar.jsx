@@ -23,7 +23,7 @@ class ComponentsNavbar extends React.Component {
     super(props);
     this.state = {
       collapseOpen: false,
-      color: "navbar-transparent"
+      //color: "navbar-transparent"
     };
   }
   componentDidMount() {
@@ -38,14 +38,14 @@ class ComponentsNavbar extends React.Component {
       document.body.scrollTop > 99
     ) {
       this.setState({
-        color: "bg-info"
+        color: "bg-dark"
       });
     } else if (
       document.documentElement.scrollTop < 100 ||
       document.body.scrollTop < 100
     ) {
       this.setState({
-        color: "navbar-transparent"
+        color: "bg-dark"
       });
     }
   };

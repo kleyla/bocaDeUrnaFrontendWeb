@@ -6,7 +6,7 @@ import { Container } from "reactstrap";
 class PageHeader extends React.Component {
   render() {
     return (
-      <div className="page-header header-filter">
+      <div className="page-header header-filter" body inverse style={{ backgroundColor: '#9966cc', borderColor: '#333' }}>
         <div className="squares square1" />
         <div className="squares square2" />
         <div className="squares square3" />
