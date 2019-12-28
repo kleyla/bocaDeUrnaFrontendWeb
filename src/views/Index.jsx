@@ -5,8 +5,13 @@ import PageHeader from "./../components/pageHeader/PageHeader.jsx";
 import Footer from "./../components/footer/Footer.jsx";
 
 class Index extends React.Component {
+    constructor(){
+      super();
+    }
     componentDidMount() {
+      
       document.body.classList.toggle("index-page");
+      
     }
     componentWillUnmount() {
       document.body.classList.toggle("index-page");

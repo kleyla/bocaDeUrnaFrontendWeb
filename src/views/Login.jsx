@@ -31,8 +31,16 @@ class Login extends React.Component {
     squares7and8: ""
   };
   componentDidMount() {
+
     document.body.classList.toggle("register-page");
     document.documentElement.addEventListener("mousemove", this.followCursor);
+    fetch('http://192.168.0.17:8000/api/partidos/', { mode: 'no-cors' })
+      .then(response => {
+        return response.json();
+      })
+      .then(response => {
+        console.log(response);
+      })
   }
   componentWillUnmount() {
     document.body.classList.toggle("register-page");
@@ -90,7 +98,7 @@ class Login extends React.Component {
                       </CardHeader>
                       <CardBody>
                         <Form className="form">
-                          
+
                           <InputGroup
                             className={classnames({
                               "input-group-focus": this.state.emailFocus
@@ -129,7 +137,7 @@ class Login extends React.Component {
                               }
                             />
                           </InputGroup>
-                         
+
                         </Form>
                       </CardBody>
                       <CardFooter>

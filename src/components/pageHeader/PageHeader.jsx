@@ -19,7 +19,7 @@ class PageHeader extends React.Component {
             <h1 className="h1-seo">hi</h1>
             <h3 className="d-none d-sm-block">
               A beautiful Design System for Bootstrap 4 (reactstrap) and React.
-              It's Free and Open Source.
+              It's Free and Open Source.fu
             </h3>
           </div>
         </Container>
